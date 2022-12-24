@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Shivam Dance Academy
+    block scripts
+    block style
+  body
+    nav#navbar 
+        ul 
+            #logo   
+                img(src="/static/img/logo.jpg")
+                | SDA
+            li #[a(href  = '/') Home ]
+            li #[a(href  = '/') About ]
+            li #[a(href  = '/') Services ]
+            li #[a(href  = '/') Class Info ]
+            li #[a(href  = '/contact') Contact us ]
+    block content
+    footer#footer 
+        | Copyright © 2022 ShivamDanceAcademy.com | All rights reserved

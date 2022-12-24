@@ -1,0 +1,45 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')  
+
+block style 
+    style
+        include ../static/style.css
+
+block content    
+    section#introSection
+        div Welcome to Shivam's Dance Academy 
+        div.small Eat Dance Sleep Repeat
+    
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img  
+                    img(src="/static/img/1.jpg")
+                div.card-content 
+                    p This is the best dance academy of the world
+        div.card
+            h3 Dance perfection 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.jpg")
+                div.card-content 
+                    p This is the best dance academy of the world
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.jpg")
+                div.card-content 
+                    p This is the best dance academy of the world
+    
+    section#sponsersSection
+        h2 Our Sponsers
+        div#sponsers
+            img(src="/static/img/logo1.jpg" , class = "spimage")
+            img(src="/static/img/logo2.jpg" , class = "spimage")
+            img(src="/static/img/logo3.jpg" , class = "spimage")
+            img(src="/static/img/logo4.jpg" , class = "spimage")
